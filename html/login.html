@@ -1,0 +1,60 @@
+<html>
+<header style="position:fixed"></header>
+<head>
+<title>Log in</title>
+<style>
+    </style>
+    <link rel="stylesheet" href="login.css">
+    <script type="text/javascript" src="login.js"></script>  
+</head>
+<body>
+ <div id="fixedheader"> </div>
+  <div id="header">
+   <h1> <img align="left" border="0" width="80px" height="110px"src="logo.jpg" ></h1></img>
+   <h1 style="color:lightblue"; align="center">Online Shop </h1>
+  </div>
+<body bgcolor="gray">
+ <div id="body" align="left">
+  <ul>
+   <li><a class="active" href="home.html">Home</a></li>
+   </ul></div>
+    <div id="heading">
+   <h1 style="color: blue" align="center">Login here</h1>
+  </div>
+<form name="myLogForm" onsubmit="return loginValidate()">
+ <script src="login.js"></script>
+
+  <div id="content">
+   <table align="center">
+    <tr>
+     <td>
+     Username: 
+     </td>
+    <td>
+    <input type="text" name="username"  placeholder="username"></td>
+   </tr>
+     <br>
+    <tr>
+      <td>
+      Password: 
+      </td>
+     <td>
+     <input type="password" name="password" placeholder="password">
+     </td>
+    </tr>
+     <br>
+    <tr>
+     <td>
+     <button type="submit" name="login" value="login" method="post">login</button></td>
+     <td>
+     <input type="button" value="register" onclick="window.location.href='regform.html'" />
+     </td>
+     </tr></table> 
+ </ul>  
+</form></div>
+<footer>
+  <div id="footer">
+	</div>
+</footer>
+</body>
+</html>
