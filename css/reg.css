@@ -1,0 +1,19 @@
+#header {
+    background-color:black;
+    color:white;
+    text-align:center;
+    padding:5px;
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   padding:10px;
+}
+#heading{
+	height: 10px;
+}
+#content{
+	height: 480px
+}
