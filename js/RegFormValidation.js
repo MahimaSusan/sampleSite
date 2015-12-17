@@ -6,7 +6,6 @@ var confirm = document.myRegForm.confirm;
 var address = document.myRegForm.address;  
 var email = document.myRegForm.email; 
 var male = document.myRegForm.male;
-var female= document.myRegForm.female;
 var country = document.myRegForm.country;
 var english= document.myRegForm.english;
 var malayalam = document.myRegForm.malayalam;
@@ -22,7 +21,7 @@ if(alphanumeric(address))
 {
 if(ValidateEmail(email))  
 { 
-    if(gender_validation(male,female))
+    if(gender_validation(male))
     {
         if(language_validation(english,malayalam))
         {
@@ -126,23 +125,22 @@ return false;
       
 
  
-function gender_validation(male,female)  
+function gender_validation(male)  
 {  
 x=0;  
   
-if(male.checked)   
+if(male[0].checked)   
 {  
 x++;  
 
 }
-if(female.checked)  
+if(male[1].checked)  
 {  
 x++;   
 }  
 if(x==0)  
 {  
 alert('Select Male/Female');  
-male.focus();  
 return false;  
 } 
 else {
@@ -182,7 +180,9 @@ return false;
     }  
     else  
     {  
-        alert('Form Succesfully Submitted');  
+        localStorage.removeItem('username');
+        alert('Form Succesfully Submitted'); 
+
 window.location.reload(true);  
     return true;  
     }  

@@ -15,5 +15,32 @@
 	height: 10px;
 }
 #content{
-	height: 480px
+	height: 470px
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+li {
+    float: left;
+    }
+    li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: gray;
+}
+textarea{
+    height: 50px;
+    width: 225px;
+    resize:none;
 }

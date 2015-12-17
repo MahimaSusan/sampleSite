@@ -1,6 +1,6 @@
 function loginValidate()  
 {  
-var username = document.myLogForm.username;  
+var username = document.myLogForm.uname;  
 var password = document.myLogForm.password; 
 if(username_validation(username))  
 {  
@@ -10,13 +10,13 @@ if(password_validation(password))
 }
 return false;
 }
-function username_validation(username)  
+function username_validation(uname)  
 {  
-var username_len = username.value.length;  
-if (username_len == 0 )  
+var uname_len = uname.value.length;  
+if (uname_len == 0 )  
 {  
 alert("User Id should not be empty ");  
-username.focus();  
+uname.focus();  
 return false;  
 }  
 return true;  
@@ -30,10 +30,12 @@ alert("Password should not be empty ");
 password.focus();  
 return false;  
 }
-else{
-
+else{ 
+	
+        localStorage.removeItem('uname');
         alert('Login Succesfully ');  
-window.location.reload(true) ;; 
-return true;
-}
+
+        window.location.reload(true) ;; 
+        return true;
+    }
 } 
