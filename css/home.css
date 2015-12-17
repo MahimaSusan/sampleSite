@@ -19,8 +19,8 @@
 body {
     height: 100%;
     width: 100%;
-    background: gray;
-}
+    background-image: url("../images/index.jpeg");
+    }
 
 ul {
     list-style-type: none;
